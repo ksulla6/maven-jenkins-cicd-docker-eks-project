@@ -157,7 +157,7 @@ docker ps
 
 ```bash
 #STEP-1: INSTALLING GIT JAVA-1.8.0 MAVEN 
-yum install git java-1.8.0-openjdk maven -y
+sudo yum install git java-21-openjdk maven -y
 
 #STEP-2: GETTING THE REPO (jenkins.io --> download -- > redhat)
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
@@ -301,7 +301,7 @@ eksctl create cluster \
 
 ## ✅  Connect kubectl to EKS
 ```bash
-aws eks --region us-east-2 update-kubeconfig --name devops-cluster
+aws eks --region us-east-1 update-kubeconfig --name devops-cluster
 ```
 
 ## ✅ Check Nodes in the Cluster
@@ -321,7 +321,7 @@ ip-192-168-yy-yy.ec2.internal   Ready    <none>   2m    v1.28.x
 **If Errors:**
 ```bash
 kubectl get svc
-eksctl get cluster --region us-east-2
+eksctl get cluster --region us-east-1
 ```
 
 ## ✅ Summary
@@ -338,7 +338,7 @@ eksctl get cluster --region us-east-2
   To delete your EKS cluster and all associated resources, use the following command:
 
 ```sh
-eksctl delete cluster --name devops-cluster --region us-east-2
+eksctl delete cluster --name devops-cluster --region us-east-1
 
 ```
 
