@@ -397,9 +397,9 @@ pipeline {
     agent any // 🖥️ Use any available Jenkins agent (node) to run the pipeline
 
     environment {
-        AWS_ACCOUNT_ID = '242201296943'   // replace AWS account ID
+        AWS_ACCOUNT_ID = '881490104281'   // replace AWS account ID
         AWS_ECR_REPO_NAME = 'demo'         // replace AWS account ID
-        AWS_DEFAULT_REGION = 'us-east-2'   // replace AWS region
+        AWS_DEFAULT_REGION = 'us-east-1'   // replace AWS region
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com"
         GIT_REPO_NAME = "maven-jenkins-cicd-docker-eks-project"  // replace your github rep name
         GIT_EMAIL = "your-email@example.com"          //replace your email id
