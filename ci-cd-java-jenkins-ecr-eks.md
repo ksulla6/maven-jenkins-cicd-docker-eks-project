@@ -271,6 +271,14 @@ curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/d
 sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
 ```
+✅ Give Jenkins Docker access:
+
+sudo usermod -aG docker jenkins
+id jenkins
+
+
+#Restart the instance (or logout and login again):
+sudo reboot
 
 
 ### ✅ Create the EKS Cluster
