@@ -277,8 +277,8 @@ eksctl version
 ```bash
 eksctl create cluster \
 --name devops-cluster \
---version 1.28 \
---region us-east-2 \
+--version 1.34 \
+--region us-east-1 \
 --nodegroup-name devops-nodes \
 --node-type t3.medium \
 --nodes 2 \
